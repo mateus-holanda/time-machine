@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar'
-import { ImageBackground, Text } from 'react-native'
+import { ImageBackground, Text, TouchableOpacity, View } from 'react-native'
 
 import { BaiJamjuree_700Bold } from '@expo-google-fonts/bai-jamjuree'
 import {
@@ -8,7 +8,12 @@ import {
   useFonts,
 } from '@expo-google-fonts/roboto'
 
+import { styled } from 'nativewind'
 import blurBg from './src/assets/bg-blur.png'
+import Logo from './src/assets/logo.svg'
+import Stripes from './src/assets/stripes.svg'
+
+const StyledStripes = styled(Stripes)
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -24,10 +29,38 @@ export default function App() {
   return (
     <ImageBackground
       source={blurBg}
-      className="relative flex-1 items-center bg-gray-900"
+      className="relative flex-1 items-center bg-gray-900 px-8 py-10"
       imageStyle={{ position: 'absolute', left: '-100%' }}
     >
-      <Text className="text-4xl font-bold text-gray-50">Hello!</Text>
+      <StyledStripes className="absolute left-2" />
+
+      <View className="flex-1 items-center justify-center gap-6">
+        <Logo />
+
+        <View className="space-y-2">
+          <Text className="text-center font-title text-2xl leading-tight text-gray-50">
+            Your time machine
+          </Text>
+          <Text className="text-center font-body text-base leading-relaxed text-gray-100">
+            Collect memorable moments from your journey and share them with the
+            world!
+          </Text>
+        </View>
+
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="rounded-full bg-green-500 px-5 py-3"
+        >
+          <Text className="font-alt text-sm uppercase text-black">
+            Register Memory
+          </Text>
+        </TouchableOpacity>
+      </View>
+
+      <Text className="text-center font-body text-sm leading-relaxed text-gray-200">
+        Developed by Mateus Holanda
+      </Text>
+
       <StatusBar style="light" translucent />
     </ImageBackground>
   )
