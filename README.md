@@ -1,7 +1,24 @@
-# Time Machine
-[![NPM](https://img.shields.io/l/react)](https://github.com/mateus-holanda/time-machine/blob/master/LICENSE)
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Time Machine" width="200">
+  <br>
+  Time Machine
+  <br>
+</h1>
 
-# About the project
+<h4 align="center">An app built with <a href="https://reactjs.org/" target="_blank">React</a> where you can register and share your memories.</h4>
+
+<p align="center">
+  <a href="#about-the-project">About the project</a> •
+  <a href="#useful-links">Useful links</a> •
+  <a href="#layout">Layout</a> •
+  <a href="#tech-stack">Tech stack</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#license">License</a> •
+  <a href="#author">Author</a>
+</p>
+
+## About the project
 
 
 ## Useful links ↗
@@ -10,10 +27,11 @@
 - [Install Node | npm]()
 - [Install Expo]()
 
+## Layout
 
-## Layout web
+### Web
 
-## Layout mobile
+### Mobile
 
 ## Tech stack 🧑‍💻
 
@@ -37,26 +55,35 @@
 - [Prisma](https://github.com/prisma/prisma) 
 - [SQLite]() [`Neon Database`](http://neon.tech/)
 
-# Run it in your machine
+## Installation
 
 First, you'll need to install npm, Node and Expo CLI to run these projects in your computer. If they are not already installed, please check out the Useful Links section above.
 
 ```bash
 # Clone repository
 git clone https://github.com/mateus-holanda/time-machine.git
+```
 
+```bash
 # Run server
 cd server
 npm run dev
+```
 
+```bash
 # Run web app
 cd web
 npm run dev
+```
 
+```bash
 # Run mobile app
 cd mobile
 npx expo start
 ```
+## License
+
+[![NPM](https://img.shields.io/badge/license-MIT-green)](https://github.com/mateus-holanda/time-machine/blob/master/LICENSE)
 
 # Author
 
